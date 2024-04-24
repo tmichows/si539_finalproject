@@ -1,0 +1,198 @@
+main{
+    margin: 75px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    background-color: #8E001C;
+    color: white;
+    border: #FFB300 5px double;
+}
+
+body{
+    background-color: #8E001C;
+    background-image: url("../images/columns.jpg"); 
+}
+
+h1{
+    font-size: 50px;
+    text-align: center;
+    padding: 50px;
+}
+
+h2{
+    font-size: 30px;
+    text-align: center;
+    padding: 25px;
+}
+
+h3{
+    font-size: 20px;
+    text-align: center;
+    padding: 25px;
+
+}
+
+a{
+    color: #8E001C;
+}
+a:visited, a:link{
+    text-decoration: none;
+}
+
+a:hover{
+    font-weight:700;
+    text-transform: uppercase;
+}
+
+p{
+    line-height: 2;
+    margin: 10px;
+    padding: 10px;
+}
+
+ul li{
+    list-style-type:disc;
+    list-style: inside;
+    padding: 10px;
+    line-height: 2;
+}
+
+ol li{
+    list-style-type:upper-roman;
+    list-style: inside;
+    padding: 10px;
+    line-height: 2;
+}
+
+nav{
+    border-bottom:#FFB300 5px double;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 15px;
+    font-size: 25px;
+    background-color: #f9ecdb;
+    text-align: center;
+}
+
+nav ul li{
+    list-style-type: none;
+    border: #FFB300 5px double;
+    padding: 25px;
+}
+
+.latin-text{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.textus{
+    background-color: #f9ecdb;
+    color:black;
+    border: #FFB300 5px double;
+    padding: 5px;
+    margin: 10px;
+}
+
+.explainer{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.skip a {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: #FFB300 5px double;
+    background-color: white;
+    color: black;
+    font-size: 20px;
+}
+
+.skip a:focus {
+    position: static;
+    width: auto;
+    height: auto;
+    border: #FFB300 5px double;
+    background-color: white;
+    color: black;
+    font-size: 20px;
+}
+
+.correct_sv{
+    background-color: #FFB300;
+}
+
+.other_sv{
+    background-color:greenyellow; 
+}
+
+.wrong_sv{
+    background-color: purple;
+    color:white;
+}
+
+#score{
+    text-align: center;
+}
+
+footer{
+    margin: 75px;
+    font-size: 20px;
+    background-color: #8E001C;
+    color: white;
+    border: #FFB300 5px double;
+    text-align: center;
+    font-size: 20px;
+}
+
+.meme-gallery img {
+    border: #FFB300 5px double;
+    margin: 10px;
+    width: 400px;
+  }
+  
+.meme-gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+.center-p{
+    text-align: center;
+}
+
+
+@media (prefers-reduced-motion) {
+    #score {
+        display: none;
+    }
+}
+
+/* Desktop */
+@media screen and (min-width: 1024px)
+{
+    
+    nav ul{
+        flex-direction: row;
+    }
+        
+    .explainer{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    ul li{
+        text-align: center;
+    }
+    
+    ol li{
+        text-align: center;
+    }
+    
+}
